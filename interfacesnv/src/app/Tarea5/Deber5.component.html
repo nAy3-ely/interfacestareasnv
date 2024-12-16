@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón Bonito</title>
+    <style>
+        /* Estilo general para el botón */
+        .btn-volver {
+            display: inline-block;
+            background-color: #6a11cb; /* Color de fondo degradado inicial */
+            background-image: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+            color: white; /* Color del texto */
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none; /* Elimina el subrayado */
+            border: none;
+            padding: 12px 24px; /* Espaciado interno */
+            border-radius: 50px; /* Bordes redondeados */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+            transition: all 0.3s ease; /* Transición suave */
+            cursor: pointer;
+        }
+
+        /* Efecto hover */
+        .btn-volver:hover {
+            background-image: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            transform: translateY(-3px); /* Efecto de elevación */
+        }
+
+        /* Efecto al hacer clic */
+        .btn-volver:active {
+            transform: translateY(1px); /* Breve efecto de "presión" */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Botón de enlace -->
+    <a href="casa.component.html">
+        <button class="btn-volver">Volver</button>
+    </a>
+</body>
+</html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<p-carousel
+  [value]="products"
+  [numVisible]="3"
+  [numScroll]="1"
+  [responsiveOptions]="responsiveOptions"
+  [circular]="true">
+  <ng-template let-product pTemplate="item">
+    <div class="product-item p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+      <!-- Imagen del producto -->
+      <div class="mb-4 overflow-hidden rounded-lg">
+        <img 
+        [src]="product.image" 
+        [alt]="product.name" 
+        class="w-full h-auto object-cover object-center rounded-lg" />
+      </div>
+
+      <!-- Detalles del producto -->
+      <div class="product-detail text-center">
+        <h4 class="text-xl font-semibold text-gray-800 mb-2">{{ product.name }}</h4>
+        <p class="text-lg text-gray-600 mb-3">${{ product.price }}</p>
+
+        <!-- Estado del inventario -->
+        <p-tag 
+          [value]="product.inventoryStatus"
+          [severity]="getSeverity(product.inventoryStatus)"
+          class="mb-3"
+        ></p-tag>
+
+        <!-- Botones de acción -->
+        <div class="flex justify-center space-x-4">
+          <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" class="p-button-rounded p-button-outlined" />
+          <p-button icon="pi pi-shopping-cart" styleClass="p-button-rounded p-button-outlined" class="ml-2" />
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>

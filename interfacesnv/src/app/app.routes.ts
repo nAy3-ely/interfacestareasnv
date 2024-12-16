@@ -1,12 +1,12 @@
 import { bootstrapApplication, BrowserModule } from '@angular/platform-browser';
 import { provideRouter, Routes } from '@angular/router';
 import { CASAComponent } from './CASA/casa.component';
-import { Deber1Component } from './Deber1/Deber1.component';
-import { Deber2Component } from './Deber2/Deber2.component';
-import { Deber3Component } from './Deber3/Deber3.component';
-import { Deber4Component } from './Deber4/Deber4.component';
-import { Deber5Component } from './Deber5/Deber5.component';
-import { Deber5Module } from './Deber5/Deber5.module';
+import { Deber1Component } from './Tarea1/Deber1.component';
+import { Deber2Component } from './Tarea2/Deber2.component';
+import { Deber3Component } from './Tarea3/Deber3.component';
+import { Deber4Component } from './Tarea4/Deber4.component';
+import { Deber5Component } from './Tarea5/Deber5.component';
+import { Deber5Module } from './Tarea5/Deber5.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';

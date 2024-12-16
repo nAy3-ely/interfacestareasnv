@@ -8,8 +8,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-CASA',
   standalone: true,
   imports: [RouterModule, CommonModule], 
-  templateUrl: './CASA.component.html',
-  styleUrls: ['./CASA.component.scss'],
+  templateUrl: './casa.component.html',
+  styleUrls: ['./casa.component.scss'],
 })
 export class CASAComponent {
   showButtons: boolean = true; 

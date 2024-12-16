@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Botón Bonito</title>
+        <style>
+            /* Estilo general para el botón */
+            .btn-volver {
+                display: inline-block;
+                background-color: #6a11cb; /* Color de fondo degradado inicial */
+                background-image: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+                color: white; /* Color del texto */
+                font-family: Arial, sans-serif;
+                font-size: 1rem;
+                font-weight: bold;
+                text-decoration: none; /* Elimina el subrayado */
+                border: none;
+                padding: 12px 24px; /* Espaciado interno */
+                border-radius: 50px; /* Bordes redondeados */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+                transition: all 0.3s ease; /* Transición suave */
+                cursor: pointer;
+            }
+    
+            /* Efecto hover */
+            .btn-volver:hover {
+                background-image: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+                transform: translateY(-3px); /* Efecto de elevación */
+            }
+    
+            /* Efecto al hacer clic */
+            .btn-volver:active {
+                transform: translateY(1px); /* Breve efecto de "presión" */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Botón de enlace -->
+        <a href="casa.component.html">
+            <button class="btn-volver">Volver al Inicio</button>
+        </a>
+    </body>
+    </html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrices Responsivas</title>
+    
+    <style>
+        
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 20px 0;
+            color: #4b4b4b;
+        }
+
+        h2 {
+            margin: 15px 0;
+            color: #6b6b6b;
+        }
+
+        .grid {
+            display: grid;
+            gap: 10px;
+            margin: 0 auto 30px;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .col {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            color: #4b4b4b;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Colores pastel alternados */
+        .col:nth-child(6n+1) {
+            background-color: #FFDDC1; /* Melocotón pastel */
+        }
+
+        .col:nth-child(6n+2) {
+            background-color: #FFABAB; /* Rosa pastel */
+        }
+
+        .col:nth-child(6n+3) {
+            background-color: #FFC3A0; /* Salmón pastel */
+        }
+
+        .col:nth-child(6n+4) {
+            background-color: #D5AAFF; /* Lila pastel */
+        }
+
+        .col:nth-child(6n+5) {
+            background-color: #85E3FF; /* Azul cielo pastel */
+        }
+
+        .col:nth-child(6n+6) {
+            background-color: #B9FBC0; /* Verde menta pastel */
+        }
+
+        /* Configuraciones de columnas según el tamaño */
+        .matrix-3x3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .matrix-4x4 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .matrix-5x5 {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        .matrix-6x6 {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .matrix-3x3,
+            .matrix-4x4,
+            .matrix-5x5,
+            .matrix-6x6 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .matrix-3x3,
+            .matrix-4x4,
+            .matrix-5x5,
+            .matrix-6x6 {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Matrices Responsivas</h1>
+
+    <h2>Matrix 3x3</h2>
+    <div class="grid matrix-3x3">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
+        <div class="col">7</div>
+        <div class="col">8</div>
+        <div class="col">9</div>
+    </div>
+
+    <h2>Matrix 4x4</h2>
+    <div class="grid matrix-4x4">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
+        <div class="col">7</div>
+        <div class="col">8</div>
+        <div class="col">9</div>
+        <div class="col">10</div>
+        <div class="col">11</div>
+        <div class="col">12</div>
+        <div class="col">13</div>
+        <div class="col">14</div>
+        <div class="col">15</div>
+        <div class="col">16</div>
+    </div>
+
+    <h2>Matrix 5x5</h2>
+    <div class="grid matrix-5x5">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
+        <div class="col">7</div>
+        <div class="col">8</div>
+        <div class="col">9</div>
+        <div class="col">10</div>
+        <div class="col">11</div>
+        <div class="col">12</div>
+        <div class="col">13</div>
+        <div class="col">14</div>
+        <div class="col">15</div>
+        <div class="col">16</div>
+        <div class="col">17</div>
+        <div class="col">18</div>
+        <div class="col">19</div>
+        <div class="col">20</div>
+    </div>
+
+    <h2>Matrix 6x6</h2>
+    <div class="grid matrix-6x6">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
+        <div class="col">7</div>
+        <div class="col">8</div>
+        <div class="col">9</div>
+        <div class="col">10</div>
+        <div class="col">11</div>
+        <div class="col">12</div>
+        <div class="col">13</div>
+        <div class="col">14</div>
+        <div class="col">15</div>
+        <div class="col">16</div>
+        <div class="col">17</div>
+        <div class="col">18</div>
+        <div class="col">19</div>
+        <div class="col">20</div>
+        <div class="col">21</div>
+        <div class="col">22</div>
+        <div class="col">23</div>
+        <div class="col">24</div>
+        <div class="col">25</div>
+        <div class="col">26</div>
+        <div class="col">27</div>
+        <div class="col">28</div>
+        <div class="col">29</div>
+        <div class="col">30</div>
+        <div class="col">31</div>
+        <div class="col">32</div>
+        <div class="col">33</div>
+        <div class="col">34</div>
+        <div class="col">35</div>
+        <div class="col">36</div>
+    </div>
+</body>
+
+</html>
