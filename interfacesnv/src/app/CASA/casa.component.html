@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entregables de Interfaces</title>
+  <style>
+ 
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5ffe8;
+      color: #2e4a1c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: #8bc34a;
+      margin-bottom: 20px;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+      width: 90%;
+      max-width: 700px;
+    }
+
+    button {
+      padding: 20px 25px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #2e4a1c;
+      background-color: #d4ffb5;
+      border: 2px solid #a2d86e;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      min-width: 150px;
+    }
+
+    button:hover {
+      background-color: #8bc34a;
+      color: #f5ffe8;
+      transform: scale(1.05);
+    }
+
+    button:active {
+      transform: scale(1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>Entregables de Interfaces</h1>
+  <div class="button-container">
+    <button routerLink="/Deber5">Ir a Deber 5</button>
+    <button routerLink="/Deber4">Ir a Deber 4</button>
+    <button routerLink="/Deber3">Ir a Deber 3</button>
+    <button routerLink="/Deber2">Ir a Deber 2</button>
+    <button routerLink="/Deber1">Ir a Deber 1</button>
+
+  </div>
+
+  <router-outlet></router-outlet>
+</body>
+</html>
