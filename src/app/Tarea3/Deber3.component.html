@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón </title>
+    <style>
+        /* Estilo general para el botón */
+        .btn-volver {
+            display: inline-block;
+            background-color: #6a11cb; /* Color de fondo degradado inicial */
+            background-image: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+            color: white; /* Color del texto */
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none; /* Elimina el subrayado */
+            border: none;
+            padding: 12px 24px; /* Espaciado interno */
+            border-radius: 50px; /* Bordes redondeados */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+            transition: all 0.3s ease; /* Transición suave */
+            cursor: pointer;
+        }
+
+        /* Efecto hover */
+        .btn-volver:hover {
+            background-image: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            transform: translateY(-3px); /* Efecto de elevación */
+        }
+
+        /* Efecto al hacer clic */
+        .btn-volver:active {
+            transform: translateY(1px); /* Breve efecto de "presión" */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Botón de enlace -->
+    <a href="casa.component.html">
+        <button class="btn-volver">Volver al Inicio</button>
+    </a>
+</body>
+</html>
+
+<div class="card-container">
+
+  <p-card header="Zorro Rojo" subheader="Vulpes vulpes" [style]="{ width: '300px' }">
+    <ng-template pTemplate="header">
+      <img alt="Card" src="https://p4.wallpaperbetter.com/wallpaper/471/740/946/fox-animals-snow-wallpaper-preview.jpg" />
+    </ng-template>
+    <p>
+      El zorro común o zorro rojo, también llamado raposo o raboso, es una especie de mamífero de la familia de los cánidos, de distribución holártica, aunque también fue introducido en Australia en el siglo XIX. Es un animal silencioso y muy cauteloso, que caza sobre todo por la noche. 
+      </p>
+    <ng-template pTemplate="footer">
+      <div class="flex justify-content-center align-items-center mt-1" style="height: 80px">
+        <p-button 
+        label="Zorro Rojo" 
+        severity="success" 
+        styleClass="w-full p-3 text-xl font-bold border-round shadow-lg hover:scale-105 transition-transform bg-blue-900">
+      </p-button>
+      </div>
+    </ng-template>
+  </p-card>
+    
+
+    <p-card header="Husky siberiano" subheader="Canis lupus familiaris" [style]="{ width: '300px' }">
+      <ng-template pTemplate="header">
+        <img alt="Card" src="https://play-lh.googleusercontent.com/QkNqYZsCovOiOZuxPnehszR7UQVQCc08JTsH6V3ePGdJdsUOnl_iS1Brf7quzOM0tA=w526-h296-rw" />
+      </ng-template>
+      <p>
+        El husky siberiano es una raza de perro de trabajo originaria del norte de Siberia en Rusia. Este perro fue creado por la tribu Chukchi como perro de trabajo para tirar de los trineos a través de largas distancias durante sus partidas de caza, sirviendo así como vehículo de transporte rápido para las presas en la vuelta al poblado.
+        </p>
+      <ng-template pTemplate="footer">
+        <div class="flex justify-content-center align-items-center mt-1" style="height: 80px">
+          <p-button 
+          label="Husky" 
+          severity="success" 
+          styleClass="w-full p-3 text-xl font-bold border-round shadow-lg hover:scale-105 transition-transform bg-blue-900">
+        </p-button>
+        </div>
+      </ng-template>
+    </p-card>
+
+    <p-card header="Gato Blanco" subheader="Felis silvestris catus" [style]="{ width: '300px' }">
+      <ng-template pTemplate="header">
+        <img alt="Card" src="https://s0.smartresize.com/wallpaper/109/138/HD-wallpaper-beautiful-white-cat-cat-kitten-sweet-animal.jpg" />
+      </ng-template>
+      <p>
+        El gato doméstico, llamado comúnmente gato, y de forma coloquial minino, michino, y algunos nombres más, es un mamífero carnívoro de la familia Felidae. Junto con el perro, es el animal doméstico más popular como mascota, como ayuda en la lucha contra roedores o ambas cosas.
+        </p>
+      <ng-template pTemplate="footer">
+        <div class="flex justify-content-center align-items-center mt-1" style="height: 80px">
+          <p-button 
+          label="Gato Blanco" 
+          severity="success" 
+          styleClass="w-full p-3 text-xl font-bold border-round shadow-lg hover:scale-105 transition-transform bg-blue-900">
+        </p-button>
+        </div>
+      </ng-template>
+    </p-card>
+
+    <p-card header="Conejo Blanco" subheader="Oryctolagus cuniculus" [style]="{ width: '300px' }">
+      <ng-template pTemplate="header">
+        <img alt="Card" src="https://png.pngtree.com/background/20230424/original/pngtree-white-rabbit-sitting-on-the-ground-with-leaves-in-the-background-picture-image_2461427.jpg" />
+      </ng-template>
+      <p>
+        El conejo común o conejo europeo es una especie de mamífero lagomorfo de la familia Leporidae, y el único miembro actual del género Oryctolagus. Mide hasta 50 cm y su masa puede ser hasta 2.5 kg. Ha sido introducido en varios continentes y es la especie que se utiliza en la cocina y en la cunicultura.
+        </p>
+      <ng-template pTemplate="footer">
+        <div class="flex justify-content-center align-items-center mt-1" style="height: 80px">
+          <p-button 
+          label="Conejo Blanco" 
+          severity="success" 
+          styleClass="w-full p-3 text-xl font-bold border-round shadow-lg hover:scale-105 transition-transform bg-blue-900">
+        </p-button>
+        </div>
+      </ng-template>
+    </p-card>
+
+    <p-card header="Mariposa" subheader="Lepidoptera" [style]="{ width: '300px' }">
+      <ng-template pTemplate="header">
+        <img alt="Card" src="https://content.nationalgeographic.com.es/medio/2023/06/01/istock-604372058-1_97074090_230601162045_800x800.jpg" />
+      </ng-template>
+      <p>
+        Los lepidópteros  son un orden de insectos holometábolos, casi siempre voladores, conocidos comúnmente como mariposas; las más conocidas son las mariposas diurnas, pero la mayoría de las especies son nocturnas (polillas, esfinges, pavones, etc.) y pasan muy inadvertidas.
+        </p>
+      <ng-template pTemplate="footer">
+        <div class="flex justify-content-center align-items-center mt-1" style="height: 80px">
+          <p-button 
+          label="Mariposa" 
+          severity="success" 
+          styleClass="w-full p-3 text-xl font-bold border-round shadow-lg hover:scale-105 transition-transform bg-blue-900">
+        </p-button>
+        </div>
+      </ng-template>
+    </p-card>
+  </div>
+  
